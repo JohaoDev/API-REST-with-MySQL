@@ -1,0 +1,35 @@
+{
+  "name": "api_rest_con_mysql",
+  "version": "1.0.0",
+  "description": "API REST con MySQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johao70/API-REST-with-MySQL.git"
+  },
+  "keywords": [
+    "API",
+    "REST",
+    "MySQL",
+    "Express",
+    "NodeJS"
+  ],
+  "author": "Johao Perlaza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johao70/API-REST-with-MySQL/issues"
+  },
+  "homepage": "https://github.com/johao70/API-REST-with-MySQL#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "nodemon": "^2.0.2",
+    "sequelize": "^5.21.3"
+  }
+}
