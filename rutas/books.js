@@ -15,13 +15,18 @@ router.get('/books', (req, res, next) => {
 });
 
 router.post('/books', (req, res, next) => {
-    if (!req.body.book_name) {
+    const datos = {
+        nombre: req.body.nombre,
+        autor: req.body.autor
+    };
+
+    if ( !datos ) {
         res.status(400);
         res,json({
             error: 'Datos incorrectos'
         })
     } else {
-        Book.create(req.body)
+        Book.create( datos )
             .then( data => {
                 res.send( data );
             })
