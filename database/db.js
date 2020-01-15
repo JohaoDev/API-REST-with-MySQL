@@ -2,9 +2,12 @@ const Sequelize = require('sequelize');
 
 const db = {};
 
-const sequelize = new Sequelize('books', 'root', '1234', {
+const sequelize = new Sequelize('books', 'root', 'Johao1234,', {
     host: 'localhost',
     dialect: 'mysql',
+    define: {
+        timestamps: false
+    },
     operatorsAliases: false,
 
     pool: {
