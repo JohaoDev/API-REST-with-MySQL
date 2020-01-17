@@ -5,7 +5,8 @@ const router = express.Router();
 const Book = require("../models/book");
 
 router.get("/books", (req, res, next) => {
-  Book.findAll()
+  const { query } = req;
+  Book.findAll( { where: query } )
     .then(books => {
       res.json(books);
     })
